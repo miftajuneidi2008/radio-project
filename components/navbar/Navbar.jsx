@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
         </div>
          
-        <div className={nav?'absolute top-0 right-0 w-[70%] min-h-[100vh] flex flex-col gap-6 justify-center items-center bg-slate-100 tran -z-30 md:hidden':'right-[-100px] tran'}>
+        <div className={`absolute top-0 ${nav?'right-0':'right-[-100%] tran'} w-[70%] min-h-[100vh] flex flex-col gap-6 justify-center items-center bg-slate-100 tran -z-30 md:hidden `}>
             <Link href={`/`} className=''>Home</Link>
             <Link href={`/`} className=''>News</Link>
             <Link href={`/`} className=''>Sport</Link>
